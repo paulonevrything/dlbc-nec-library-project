@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="toolbar">
+    <span class="brand">📚 MyLibrary</span>
+</mat-toolbar>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to <span>MyLibrary</span></h1>
+        <p>Your gateway to thousands of books, research papers, and learning materials — all in one place.</p>
+
+        <div class="cta-buttons">
+            <button mat-raised-button color="accent" (click)="onSignUp()">Get Started</button>
+            <button mat-stroked-button color="primary" (click)="onSignIn()">Sign In</button>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <mat-card class="feature-card" *ngFor="let feature of ['Vast Collection', 'Easy Access', 'Community Support']">
+        <mat-card-title>{{ feature }}</mat-card-title>
+        <mat-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Discover more with MyLibrary.</p>
+        </mat-card-content>
+    </mat-card>
+</section>
