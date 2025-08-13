@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dlbc-nec-library": {
+    "dlbc-nec-library-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "dlbc-nec-library:build:production"
+              "buildTarget": "dlbc-nec-library-frontend:build:production"
             },
             "development": {
-              "buildTarget": "dlbc-nec-library:build:development"
+              "buildTarget": "dlbc-nec-library-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
